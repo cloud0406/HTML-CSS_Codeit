@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>id/class exam</title>
+    <!--class(.)는 각 페이지에서 중복 사용 가능, id(#)는 각 페이지에서 중복 안됨-->
+    <!--class는 각 문단에서 여러class사용 가능, id는 여러 id동시에 사용x-->
+    <!--class : 여러 요소 스타일링, id : 한 요소만 스타일링-->
+    <style>
+        .big-blue-text {
+            font-size: 64px;
+            color: blue;
+        }
+        .centered-text{
+            text-align: center;
+        }
+
+        #best-text{
+            color: orange;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 class="centered-text">Heading 1 </h1>
+    <h2 class="centered-text big-blue-text">Heading 2</h2>
+
+    <p id="best-text">첫 번째 문단</p>
+    <p class="big-blue-text">두 번째 문단</p>
+    <p>세 번째 문단</p>
+    <p>네 번째 문단</p>
+
+    
+</body>
+</html>
