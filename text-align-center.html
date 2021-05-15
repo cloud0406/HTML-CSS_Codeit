@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가운데 정렬</title>
+
+    <style>
+        /* 개발자 도구 : 검사 를 통해 확인해보면 h1과 p 태그는 화면 가로 전체를 차지하고있음 */
+        h1{
+            text-align: center;
+        }
+
+        p{
+            text-align: center;
+        }
+
+
+        /* a 태그는 autoXauto 로 딱 글이 있는 만큼의 공간만 차지하므로 가운데 정렬해도 바뀌지않음 */
+        a{
+            text-align: center;
+        }
+
+        /* div태그는 화면 전체 사용하므로 div태그 이용하면 a 태그도 정렬 가능 */
+        .menu{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1, p태그는 제대로 가운데 정렬됨 -->
+    <h1>Hello World!</h1>
+    <p>Paragraph</p>
+
+    <!-- a태그는 글만큼의 공간만 차지하므로 정렬 안됨 -->
+    <a href="#">Link</a> <!-- # : hash는 페이지의 가장 위를 가리킴, 클릭시 가장위로 스크롤 이동 -->
+    
+
+    <!-- div태그 이용하여 a태그 정렬 -->
+    <div class="menu">
+        <a href="#">link by div tag</a>
+    </div>
+    
+    
+</body>
+</html>
