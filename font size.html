@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling text</title>
+
+    <!-- 폰트 크기를 정하는 절대적(absolute) 방법:  px, pt(px의 1.33배 정도) : 다른 것들의 영향 받지 않음 -->
+    <!-- 폰트 크기를 정하는 상대적(relative) 방법 : em, % : 부모의 크기에 영향 받음 -->
+
+    <style>
+        /* px, pt는 다른 요소의 영향 받지않음 */
+        body{
+            font-size: 16px;
+        }
+        /* 부모 요소인 body의 폰트 크기의 100% 즉 16px */
+        .div1{
+            font-size: 100%;
+        }
+        /* 부모 요소인 div1의 폰트 크기의 2배(2em=200%) 즉 32px */
+        .div2{
+            font-size: 2em;
+        }
+        /* 부모 요소인 div2의 폰트 크기의 1.5배(150%) */
+        .div3{
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <!-- div3의 부모 -> div2 , div2의 부모-> div1, div1의 부모 -> body -->
+    <div class="div1">
+        div1
+        <div class="div2">
+            div2
+            <div class="div3">
+                div3
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
