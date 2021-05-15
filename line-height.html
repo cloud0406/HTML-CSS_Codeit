@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- line-height : 줄간격 조절 위해 사용 -->
+
+    <style>
+        /* font-size와 font-family에 따라 'content area'가 정해짐 / line-height는 content area에 영향 주지 않음 */
+        p {
+        font-size: 40px;
+        color: white;
+        }
+
+        /* 기본상태, 아래 예시에서 content area : 59px로 설정됨 */
+        .p1 {
+        background-color: red;
+        line-height: normal;
+        }
+
+        /* line-height가 conent area보다 40px 많기 때문에 위아래로 20px씩 추가 공간생김 */
+        .p2 {
+        background-color: green;
+        line-height: 99px;
+        }
+        
+        /* line-height가 conent area보다 19px 적기 때문에 위아래로 -9.5px씩 공간 줄어듬 */
+        .p3 {
+        background-color: blue;
+        line-height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <p class="p1">gallantly</p>
+    <p class="p2">gallantly</p>
+    <p class="p3">gallantly</p>
+
+    <p class="p1">gallantly gallantly gallantly gallantly gallantly gallantly gallantly gallantly gallantly gallantly gallantly gallantly</p>
+    <p class="p2">gallantly gallantly gallantly gallantly gallantly gallantly gallantly gallantly gallantly gallantly gallantly gallantly</p>
+    <p class="p3">gallantly gallantly gallantly gallantly gallantly gallantly gallantly gallantly gallantly gallantly gallantly gallantly</p>
+</body>
+</html>
