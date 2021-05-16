@@ -1,0 +1,19 @@
+
+#serif{
+    font-family: serif;
+  }
+  #sans-serif{
+    font-family: Sans-Serif;
+  }
+  #monospace{
+    font-family: Monospace;
+  }
+  #cursive{
+    font-family: cursive;
+  }
+  #fantasy{
+    font-family: fantasy;
+  }
+  #google{
+    font-family: 'Goblin One', cursive;
+  }
