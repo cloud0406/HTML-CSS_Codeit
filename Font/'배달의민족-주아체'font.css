@@ -1,0 +1,12 @@
+
+/* 폰트를 직접 다운 받아 사용 */
+@font-face{
+    /* 현재폴더에서 다운 받은 배달의민족 '주아체' 폰트 파일까지의 경로 찾음 */
+    src: url("BMJUA_ttf.ttf"); 
+    /* 폰트 이름 설정해줌 */
+    font-family: "Jua";
+}
+
+p{
+    font-family: "Jua";
+}
