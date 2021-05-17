@@ -1,0 +1,35 @@
+.logo{
+    margin-top: 80px;
+
+    /* 사진 가운데정렬 */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
+  }
+  
+
+  /* 메뉴 전체의 설정 */
+  .menu{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  /* 메뉴 안의 a 태그 설정 */
+  .menu a{
+      /* 글자간 간격 20px위해서 좌, 우로 10px씩 띄어줌 */
+    margin-left: 10px;
+    margin-right: 10px;
+
+    font-size: 16px;
+    font-family: Helvetica;
+    color: #58595B;
+    text-decoration: none;
+  }
+  
+  .picture{
+      /* 사진 가운데정렬 */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
