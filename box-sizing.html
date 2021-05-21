@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin&padding</title>
+
+   
+    <style>
+        /* 박스의 길이는 width와 border padding에 의해 결정됨 : 기본상태인 'box-sizing: content-box'상태  */
+        /* 하지만 'box-sizing: border-box' 설정한 후, width, height설정하면 자동으로 padding과 border를 포함하여 width와 height의 크기만큼 박스조절됨 */
+
+        /* '*'은 모든 요소에 적용하겠단 뜻 */
+        /* 상당히 편해서 요새는 개발자들이 시작전에 항상 적고쓰는 코드 */
+        * {
+            box-sizing: border-box;
+        }
+       
+        h1{
+             /* 원래는 박스의 총 가로 길이('border*2 + padding*2 + width'로 5+35+300+35+5= 380, 세로는 5+35+200+5+35=280이다*/ 
+             /* 하지만 box-sizing: border-box;로 가로 세로 300,200으로 설정됨 */
+            width: 300px;
+            height: 200px;
+            padding: 35px;
+            border: 5px solid red;
+         }
+        
+        
+        .p1{
+            width: 300px;
+            height: 200px;
+            padding: 35px;
+            border: 5px solid red;
+
+            /* 모든 요소말고 따로 적용시킬수도 있음 */
+            box-sizing: border-box;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <h1>인생은 아름다워</h1>
+    <p class="p1">
+        Life is Beautiful
+    </p>
+    <p class="p2">
+        로마에 갓 상경한 시골 총각 ‘귀도’는 운명처럼 만난 여인 ‘도라’에게 첫눈에 반한다. 
+        넘치는 재치와 유머로 약혼자가 있던 그녀를 사로잡은 ‘귀도’는 ‘도라’와 단란한 가정을 꾸리며 분신과도 같은 아들 ‘조수아’를 얻는다. 
+        ‘조수아’의 다섯 살 생일, 갑작스레 들이닥친 군인들은 ‘귀도’와 ‘조수아’를 수용소 행 기차에 실어버리고, 
+        소식을 들은 ‘도라’ 역시 기차에 따라 오른다. 
+        ‘귀도’는 아들을 달래기 위해 무자비한 수용소 생활을 단체게임이라 속이고 1,000점을 따는 우승자에게는 진짜 탱크가 주어진다고 말한다. 
+        불안한 하루하루가 지나 어느덧 전쟁이 끝났다는 말을 들은 ‘귀도’는 마지막으로 ‘조수아’를 창고에 숨겨둔 채 아내를 찾아 나서는데… 
+        전세계를 울린 위대한 사랑, 마법처럼 놀라운 이야기가 찾아온다!
+    </p>
+
+</body>
+</html>
