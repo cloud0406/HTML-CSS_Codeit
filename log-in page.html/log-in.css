@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    border-radius: 5px;
+
+    /* 테두리 없앨때 설정 */
+    border: none;
+  }
+  
+  body {
+    
+    margin: 0;
+    background-color: #1BBC9B;
+  }
+  
+  .login-form {
+    width: 300px;
+    background-color: #EEEFF1;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 20px;
+  }
+  
+  .text-field {
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .submit-btn {
+    background-color: #1BBC9B;
+    font-size: 14px;
+    color: white;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .links {
+      margin-top: 30px;
+      text-align: center;
+  }
+  
+  .links a {
+    font-size: 12px;
+    color: #9B9B9B;
+  }
