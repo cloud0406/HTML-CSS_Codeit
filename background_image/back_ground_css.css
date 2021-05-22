@@ -1,0 +1,19 @@
+.div1 {
+    height: 500px;
+    border: 5px solid green;
+    background-image: url("beach.jpg");
+    
+    /* 사진 반복 안함 */
+    background-repeat: no-repeat;
+    /* 가로 반복 :repeat-x, 세로 반복 : repeat-y, 가로 세로 반복 : repeat, 반복 후 남는 공간 여백 배분 : space, 남는 공간 이미지 확대해서 배분 : round */
+
+    /* 배경을 꽉 채우며 비율 유지 */
+    background-size: cover;
+    /* 원래 사이즈 : auto, 가로,세로 중 먼저 채워지는쪽 맞춰서 출력 : contain, 픽셀값 지정 : ?px ?px, 퍼센트 지정: ?% ?% */
+
+    /* 화면을 줄이거나 늘릴때 어느 부분을 중심으로 보여줄건지 */
+    background-position: right bottom; 
+    /* 오른쪽과 아래를 중심으로 보여줌 */
+    /* 가로 세로 지정 : (left or right or center) , (top or bottom or center) 로 표현 */
+    /* 퍼센트랑 픽셀로도 지정 가능 */
+}
