@@ -1,0 +1,88 @@
+/* 배달의 민족체 쓰기위한 @font-face */
+@font-face {
+    src: url("../fonts/BMJUA_ttf.ttf");
+    /* 직접 설정 */
+    font-family: Jua;  
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f0e8d9;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 64px;
+    color: #58595b;
+    margin-top: 75px;
+    margin-bottom: 30px;
+    font-family: Jua;
+  }
+  
+  h2 { 
+    text-align: center;
+    font-size: 32px;
+    color: #58595b;
+    margin-bottom: 75px;
+    font-family: Jua;
+  }
+  
+  .food{
+    background-color: white;
+    width: 300px;
+
+    /* 가운데정렬 */
+    margin-left: auto;
+    margin-right: auto;
+
+    /* 박스만 둥글게 하기 때문에 박스 위를 덮는 사진에게는 영향이 가지 않음 */
+    border-radius: 10px;
+
+    /* 사진도 같이 둥글게 표현하기 위해 박스위로 덮어지는 사진 부분은 감춤 */
+    overflow: hidden;
+
+    /* 박스 사이 간격주기 위함 */
+    margin-bottom: 50px;
+  }
+
+   /* 위의 overflow: hidden 대신 이렇게 해줘도 됨
+  .food img{
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+  } */
+  
+  /* 사진 제외 글자 주분만 패딩 주기 위해서 따로 묶어준 div태그를 다음과 같이 설정 */
+  .food .info{
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .food h3{
+    color: #58595b;
+    font-size: 32px;
+    font-family: Jua;
+
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  .food p{
+    color: #58595b;
+    font-size: 16px;
+    font-family: Jua;
+
+    margin-top: 0;
+    margin-bottom: 16px;
+
+    /* 박스안에 글자들 위에서 가운데 정렬해줬지만 p태그는 왼쪽 정렬로 해줌 */
+    text-align: left;
+  }
+  
+  .food a{
+    color: #0000ee;
+    font-size: 16px;
+    font-family: Jua;
+    text-decoration: none;
+  }
