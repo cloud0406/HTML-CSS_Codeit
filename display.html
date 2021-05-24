@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+
+    <!-- display 속성 : inline, block, inline-block, list-item, table, none... 등 / 모든 요소는 여러 종류중 딱 한가지의 display 속성 가지고있음 -->
+    <!-- 대부분 inline 혹은 block display임 -->
+    <!-- inline display : 다른 요소들과 같은줄에 머무르려고하는 성향 / 가로 길이는 필요한만큼(auto)만 차지 ex) span, b , i, img tag 등등 -->
+    <!-- block display : 새로운 줄에 가려고 하는 성향 / 가로 길이를 최대한 많이 차지하려고 함 ex) div, h1, p, ul, li 등등 -->
+
+    <style>
+        body{
+            font-size: 38px;
+        }
+
+        .div1{
+            background-color: palegreen;
+            margin-bottom: 20px;
+        }
+
+        .div2{
+            background-color: paleturquoise;
+        }
+
+
+        /* display 속성 변경 */
+        .div2 i {
+            display: block;
+        }
+
+        .div2 div{
+            display: inline;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- i tag는 inline 이라 같은줄에 그대로 표현, div tag는 block이라 다른줄로 바뀜 -->
+    <div class="div1">
+        Hello my <i>name</i> is young! <br><br>
+        Hello my <div>name</div> is young! <br><br>
+    </div>
+
+    <!-- 위의 style에서 i tag는 block으로 div태그는 inline display로 속성 변경해줌 : 결과 반대로 나옴 -->
+    <div class="div2">
+        Hello my <i>name</i> is young! <br><br>
+        Hello my <div>name</div> is young! <br><br>
+    </div>
+   
+    
+</body>
+</html>
