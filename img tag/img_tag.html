@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img_tag</title>
+
+    <style>
+        body{
+            margin: 0;
+        }
+
+        /* img의 아래에 맞춰 정렬시킴 / top, bottom, middle */
+        img{
+            vertical-align: bottom;
+        }
+        
+        /* 글자와 img까지 가운데로 정렬됨 : img가 inline이기때문에 글자와 같은 취급 */
+        .container {
+            text-align: center;
+        }
+
+        /* 위의 방식은 사진하나를 가운데로 정렬할때도 전체를 가운데 정렬해버리므로
+        보통 사진만 정렬할때는 아래와 같은 방법을 주로 사용함
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        } */
+
+    </style>
+</head>
+<body>
+    <!-- img 태그는 '대체 요소'라 불리는 가로 세로 조절 가능한 특별한 inline 요소 / img를 큰 text라고 생각하고 처리할 수 있음-->
+    <div class="container">
+        아이스크림 <img src="ice_cream.jpg" height="100">먹고싶다!
+    </div>
+    
+</body>
+</html>
