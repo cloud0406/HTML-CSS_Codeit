@@ -1,0 +1,15 @@
+.google-link{
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    width: 300px;
+    background-color: #fafafa;
+    margin-top: 100px;
+
+    /* a tag는 기본적으로 inline 요소이므로 block 요소로 변경하여 다른 줄에 처리되도록 설정,
+    a tag의 기본 속성인 밑줄과 파란색도 변경 가능 */
+    display: block;
+    color: black;
+    text-decoration: none;
+}
