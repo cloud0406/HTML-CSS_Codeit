@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Link</title>
+</head>
+<body>
+    <a href="https://google.com" target="_blank">구글로 가는 링크</a>
+
+    <!-- text, img 모두 inline 요소이므로 단순히 text를 img로 바꾼것 뿐 -->
+    <a href="https://google.com" target="_blank">
+        <img src="google.jpg" width="200">
+    </a>
+
+
+    <!-- 사진과 글을 묶어서 링크 처리 : a class -->
+    <a class="google-link" href="https://google.com" target="_blank">
+        <img src="google.jpg" width="200">
+        <h1>구글</h1>
+        <p>이걸 누르면 구글로 이동!</p>
+    </a>
+</body>
+</html>
