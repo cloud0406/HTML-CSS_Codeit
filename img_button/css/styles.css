@@ -1,0 +1,23 @@
+body {
+    margin: 50px 0;
+  }
+  
+  h1 {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* 이미지 가운데 정렬 (인라인태그 이미지 : 글자취급) */
+  .img_button {
+    text-align: center;
+  }
+  
+  /* 마지막 요소만 빼고 처리 */
+  .img_button a :not(last child){
+    margin-right: 20px;
+  }
+  /* 인라인 태그 자체에 띄어쓰기가 있기 때문에 정확히 20px margin이 생기지는 않음
+  정확히 하려면 a tag를 모두 붙여서 띄어쓰기 없이 쓰거나, '검사'를 통해
+  띄어쓰기가 몇px인지 확인 후 조절하는 방법이있음 */
