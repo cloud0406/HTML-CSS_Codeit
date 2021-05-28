@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baseline</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- 보이지 않는 선에 맞춰 text, img, inline-block 요소등이 정렬되어있는것(baseline) -->
+</head>
+<body>
+    <div class="container">
+        <span class="alex">alex</span>
+        <div class="inline-block">
+            <!-- 'inline-block' 의 경우 div의 마지막줄을 baseline으로 잡음, 즉 'Chris'가 baseline이 됨 -->
+            <h1>ben</h1>
+            <h2>Chris</h2>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="container">
+        <!-- inline요소에 줄이 하나도 없을 경우에는 상자의 밑부분이 baseline됨 -->
+        <span class="alex">alex</span>
+        <div class="inline-block"></div>
+    </div>
+
+    <br><br>
+
+    <div class="container">
+        <span class="alex">alex</span>
+        <div class="inline-block2">
+            <!-- box가 작아져도 'Chris'가 요소의 마지막 줄이므로 chris에 baseline이 맞춰짐 -->
+            <h1>ben</h1>
+            <h2>Chris</h2>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="container">
+        <span class="alex">alex</span>
+        <div class="inline-block3">
+            <!-- overflow가 설정되면 box의 밑부분이 baseline으로 설정됨 -->
+            <h1>ben</h1>
+            <h2>Chris</h2>
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>
