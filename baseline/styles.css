@@ -1,0 +1,33 @@
+.container {
+    background-color: orange;
+}
+
+.alex {
+    font-size: 90px;
+    background-color: pink;
+}
+
+.inline-block {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    width: 100px;
+    height: 150px;
+}
+
+.inline-block2 {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    width: 100px;
+    height: 70px;
+}
+
+.inline-block3 {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    width: 100px;
+    height: 70px;
+    overflow: hidden;
+}
