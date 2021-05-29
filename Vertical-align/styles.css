@@ -1,0 +1,60 @@
+.container {
+    background-color: orange;
+}
+
+/* 기본상태 */
+.alex {
+    font-size: 90px;
+    background-color: pink;
+}
+.ben {
+    font-size: 30px;
+    background-color: lime;
+}
+.chris {
+    font-size: 60px;
+    background-color: yellow;
+}
+
+
+/* vertical-align : top 으로 윗부분 맞춤 */
+.alex2 {
+    font-size: 90px;
+    background-color: pink;
+}
+.ben2 {
+    font-size: 30px;
+    background-color: lime;
+
+    /* vertical-align: top;을 할 경우 해당 박스의 윗부분이, 본인을 제외한 속해있는 줄의 가장높은 요소의 윗부분에 맞춰짐 */
+    /* 따라서 초록박스가 옆에있는 가장높은 박스, 즉 alex박스의 윗부분과 맞춰짐 */
+    /* 나머지는 baseline에 그대로 */
+    vertical-align: top;
+}
+.chris2 {
+    font-size: 60px;
+    background-color: yellow;
+}
+
+
+
+/* vertical-algin : top 심화 */
+.alex3 {
+    font-size: 90px;
+    background-color: pink;
+
+    /* 우선 alex를 제외한 가장 높은 요소, 즉 Chirs와 alex의 윗부분을 맞추기 위해 chris가 위로 이동(아래 코멘트에서 다시 설명) */
+    /* 그 후 x와 ben은 vertical-align 설정안되어있기 때문에 이동한 Chirs의 baseline에 맞춰 위로 같이 올라옴 */
+
+    /* 다른 요소들을 제외하고 alex만 아래로 보내서 chirs와 윗부분 맞추면 안되나? */
+    /* baseline은 vertical-align의 조건들을 충족시키며 줄의높이(세로 길이)를 최소화 하는 곳에 위치하기 때문에 이렇게 하지 않음 - alex가 내려갈경우 전체 세로 길이가 늘어나기 때문에*/
+    vertical-align: top;
+}
+.ben3 {
+    font-size: 30px;
+    background-color: lime;
+}
+.chris3 {
+    font-size: 60px;
+    background-color: yellow;
+}
