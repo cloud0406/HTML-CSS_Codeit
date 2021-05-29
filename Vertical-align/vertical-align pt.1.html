@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Align</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- vertical align을 설정해주지 않을경우 baseline이 부모요소의 baseline에 맞추게 되어있음 -->
+    <!--  baseline은 vertical-align의 조건들을 충족시키며 줄의높이(세로 길이)를 최소화 하는 곳에 위치 -->
+
+    <div class="container">
+        x
+        <span class="alex">alex</span>
+        <span class="ben">ben</span>
+        <span class="chris">chris</span>
+    </div>
+
+    <br><br>
+
+    <div class="container">
+        x
+        <span class="alex2">alex</span>
+        <span class="ben2">ben</span>
+        <span class="chris2">chris</span>
+    </div>
+
+    <br><br>
+
+    <div class="container">
+        x
+        <span class="alex3">alex</span>
+        <span class="ben3">ben</span>
+        <span class="chris3">chris</span>
+    </div>
+
+    <!-- 왜 두번째 div에서는 ben박스만 위로 올라가고 세번째 div에서는 전체가 같이 올라갈까?
+
+    정확하진 않지만 두번째 div에서는 vertical 속성을 해준 ben 박스를 제외하고는 baseline 변화가 없었지만
+    세번째 div에서는 vertical 속성을 해준 alex로 인해 vertical 속성이 설정 되어있지않은 chris의 박스가 이동함으로써
+     baseline에 변화가 생겼고 이를 맞춰주기 위해 다른 요소들도 이동한 것으로 생각됨 -->
+    
+</body>
+</html>
