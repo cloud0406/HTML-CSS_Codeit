@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>세로 가운데 정렬</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- vertical-align은 inline 혹은 inline-block 요소에서만 적용되기 떄문에  .info를 인라인 블록으로 바꿔줌 -->
+    <!-- 'vertical-align:middle'은 부모 요소의 x의 가운데와 맞춤 -->
+    <div class="container">
+        안녕하세요 x
+        <div class="info">
+          <h1>Hello!</h1>
+          <p>My name is young.</p>
+        </div>
+    </div>
+
+    <br><br>
+
+    <!-- 즉 info요소를 가운데로 오게하려면 'x'가 가운데로 오게끔 해야함 : 세로 길이가 100%인 요소 만들고 그 요소에도 vertical-align:middle 해줌 -->
+    <div class="container">
+        x
+        <div class="helper"></div>
+        <div class="info">
+          <h1>Hello!</h1>
+          <p>My name is young.</p>
+        </div>
+      </div>
+      
+      <br><br>
+
+      <!-- 위의 코드에서 x지우고 helper의 가로 길이만 없애줌 ->  세로 가운데 정렬 완성 -->
+      <div class="container">
+        <div class="helper2"></div>
+        <div class="info">
+          <h1>Hello!</h1>
+          <p>My name is young.</p>
+        </div>
+      </div>
+
+      <br><br>
+
+      <!-- info의 가로 길이가 100%가 되면 이상해짐 : helper와 info요소 사이에 띄어쓰기가 한칸 있기 때문에, 가로 길이 100% info요소는 자리가 부족해서 다음줄로 감 -->
+      
+      <div class="container">
+        <div class="helper2"></div>
+        <div class="info2">
+          <h1>Hello!</h1>
+          <p>My name is young.</p>
+        </div>
+      </div>
+      
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+      <!--  helper와  info요소의 띄어쓰기를 없애고 div태그를 붙여서 써줌, css 코드는 변화 없음 -->
+      <div class="container">
+        <div class="helper2"></div><div class="info2">
+          <h1>Hello!</h1>
+          <p>My name is young.</p>
+        </div>
+      </div>
+
+
+      <br><br>
+
+      <!-- line-height 속성으로도 해결 가능 , info를 인라인 블록으로 설정해주고 부모인 container에 height와 동일한 line-height설정
+      line-height는 자식들에게 상속되기 때문에 info에는 line-height:noraml을 써줘야함 -->
+      <div class="container2">
+         x
+        <div class="info3">
+          <h1>Hello!</h1>
+          <p>My name is young.</p>
+        </div>
+     </div>
+
+</body>
+</html>
