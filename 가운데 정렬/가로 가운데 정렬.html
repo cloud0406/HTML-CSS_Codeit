@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가로 가운데 정렬</title>
+
+    <style>
+        /* inline 혹은 inline-block 요소일 경우 부모 태그에 'text-align: center'사용하면 됨/ img도 text처럼 처리 */
+        .container {
+            text-align: center;
+            background-color: lime;
+        }
+
+        /* block 요소일 경우 margin-left: auto; , margin-right: auto; 를 사용하여 가운데 정렬해줌 */
+        .block-element {
+            width: 100px;
+            height: 50px;
+            background-color: lime;
+
+            margin-left: auto;
+            margin-right: auto; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        텍스트 
+    </div>
+
+    <br><br>
+
+    <div class="block-element">
+        텍스트
+    </div>
+    
+</body>
+</html>
