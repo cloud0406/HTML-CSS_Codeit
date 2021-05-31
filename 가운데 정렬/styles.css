@@ -1,0 +1,54 @@
+.container {
+    width: 300px;
+    height: 400px;
+    background-color: gray;
+    text-align: center;
+  }
+  
+  .info {
+    background-color: lime;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .helper {
+    display: inline-block;
+    /* 어떤 요소에 height: 100%;를 설정하기 위해서는 부모의 height가 설정되어 있어야함 : 여기선 .container의 height */
+    height: 100%;
+    vertical-align: middle;
+    
+    /* 설명을 위해서 */
+    width: 10px;
+    background-color: red;
+  }
+
+
+  .helper2 {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+
+  .info2 {
+    background-color: lime;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+
+  .container2 {
+    width: 300px;
+  height: 400px;
+  background-color: gray;
+  text-align: center;
+  line-height: 400px;
+  }
+
+  .info3 {
+    background-color: lime;
+  display: inline-block;
+  line-height: normal;
+  vertical-align: middle;
+  }
+  
