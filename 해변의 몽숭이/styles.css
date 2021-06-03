@@ -1,0 +1,12 @@
+img {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* 원래 위치에서 위로 100px ,오른쪽으로 200px 움직이기!
+  -> 반대 위치인 아래로 100px, 왼쪽으로 200px 공간을 줌으로써 이동시킴 */
+  .relative .mongsoong {
+    position: relative;
+    bottom: 100px;
+    left: 200px;
+  }
