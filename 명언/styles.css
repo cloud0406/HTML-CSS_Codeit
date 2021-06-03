@@ -1,0 +1,31 @@
+.quote {
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-family: 'Nanum Pen Script', cursive;
+    margin-top: 75px;
+  }
+  
+  .figure {
+    margin-top: 50px;
+  }
+  
+  /* 두 따옴표 모두 해당 */
+  .qmark{
+      font-size: 300%;
+      position: relative;
+  }
+
+  /* 시작따옴표만 해당 */
+  .open-qmark{
+      margin-right: 15px;
+      /* position:relative 에 대한 값 */
+      top: 20px;
+  }
+
+  /* 닫는 따옴표만 해당 */
+  .close-qmark{
+      margin-left: 15px;
+      /* position:relative 에 대한 값 */
+      top: 80px;
+  }
