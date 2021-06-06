@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position-absolute</title>
+
+    <!-- 포지셔닝 안된 상태(기본) : static / 포지셔닝 된 상태 : relative, fixed, absolute -->
+    <!-- relative : 원래 자리 기준 , fixed : 브라우저 윈도우가 기준 -->
+    <!-- absoulte : 가장 가까운 '포지셔닝이 된' 조상 요소가 기준 -->
+    <style>
+        /* 기본상태  */
+        .red {
+            background-color: red;
+            width: 500px;
+            height: 500px;
+        }
+        .green {
+            background-color: green;
+            width: 300px;
+            height: 300px;
+        }
+        .blue {
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+        }
+
+
+
+        .red2 {
+            background-color: red;
+            width: 500px;
+            height: 500px;
+        }
+        /* position : relative 사용 */
+        .green2 {
+            background-color: green;
+            width: 300px;
+            height: 300px;
+            /* 원래위치 기준으로 아래로 40, 오른쪽으로 90만큼 이동 */
+            position: relative;
+            top: 40px;
+            left: 90px;
+        }
+        /* position : absolute사용 */
+        /* 가장 가까운 '포지셔닝' 된 조상 : green 이므로  green에 맞춰 움직임 */
+        /* green div에서 아래로 40px, 오른쪽으로 10px의 공간을 두고 자리를 잡음 */
+        .blue2 {
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            bottom: 40px;
+            right: 10px;
+        }
+
+
+
+        /* position:relative 적용 */
+        .red3 {
+            background-color: red;
+            width: 500px;
+            height: 500px;
+            position: relative;
+        }
+        .green3 {
+            background-color: green;
+            width: 300px;
+            height: 300px;
+        }
+        /* 가장 가까운 조상은 green이지만 포지셔닝 안되어있음 */
+        /* 가장 가까운 '포지셔닝 된' 조상은 red div이므로 
+        red를 기준으로 위에서 250px, 오른쪽에서 20px 공간을 두고 자리잡음*/
+        .blue3 {
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 250px;
+            right: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="red"> 
+        <div class="green">
+            <div class="blue">
+                
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="red2"> 
+        <div class="green2">
+            <div class="blue2">
+                
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="red3"> 
+        <div class="green3">
+            <div class="blue3">
+                
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
