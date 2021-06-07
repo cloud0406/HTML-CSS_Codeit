@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <!-- 보통 p태그의 text에 사진등을 띄울때 사용 -->
+    <style>
+        div {
+            height: 100px;
+        }
+        .blue{
+            background-color: blue; 
+            width: 300px;
+        }
+
+        .yellow{
+            background-color: yellow;
+           
+        }
+
+        .orange{
+            background-color: orange;
+           
+        }
+
+        .blue_float{
+            background-color: blue;
+            width: 300px;
+
+            /* 파란색이 붕 떠있음, 원래 파란색 있던 공간에 노란색이 들어옴 */
+            /* 파란색이 노란색을 덮고 있는것처럼 보임(떠있기 때문에) */
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <!-- 기본상태 -->
+    <div class="blue"></div>
+    <div class="yellow">Hellow world!</div>
+    <div class="orange"></div>
+
+    <br><br>
+
+    <div class="blue_float"></div>
+    <!-- 인라인 요소, 인라인 블락요소는 이동할 수 없음 -->
+    <!-- 텍스트는 인라인 요소이기때문에 float공간에 갈 수 없음 -->
+    <div class="yellow">Hellow world!</div>
+    <div class="orange"></div>
+</body>
+</html>
