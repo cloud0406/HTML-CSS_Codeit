@@ -1,0 +1,27 @@
+.env-div {
+    width: 500px;
+    height: 232px;
+    /* 포지셔닝 해주지 않으면 다음 부모태그인 body로 넘어가므로 별도로 아무 포지셔닝이나 해줌 */
+    position: relative;
+  }
+  
+  .address {
+    font-family: cursive;
+
+    /* 부모태그인 'env-div'태그를 기준으로 왼쪽으로 30, 아래에서 30만큼 떨어진 곳에 위치 */
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+  }
+  
+  .stamp {
+
+    /* 마찬가지로 부모태그 기준으로 위쪽으로 30 오른쪽으로 30만큼 떨어진 곳에 우표 위치시킴 */
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  
+  
+  
+  
