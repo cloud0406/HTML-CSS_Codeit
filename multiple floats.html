@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiple floats</title>
+
+    <style>
+        .col{
+            height: 200px;
+            /* float: left; : 모든 영역에 float: left해주면 브라우저 가로길이에 맞게 왼쪽부터 차례대로 채움*/
+        }
+
+        .col-1{
+            width: 200px;
+        }
+
+        .col-2{
+            width: 400px;
+        }
+
+        .col-3{
+            width: 600px;
+        }
+
+        /* 파랑색이 위로 뜸 */
+        #div1 {
+            float: left;
+        }
+        /* 초록색도 위로뜨고 먼저 자리차지하고 있는 파란색 옆으로붙음 */
+        #div2{
+            float: left;
+        }
+
+        /* 노란색과 보라색은 브라우저 길이를 줄이면 다음줄로 넘어감 */
+        /* body의 가로 길이를 전부 채우면(공간이 부족하면) 다음줄로 가기때문 */
+
+        /* 노란색도 마찬가지 */
+        #div3{
+            float: left;
+        }
+        /* 주황색도 마찬가지 */
+        #div4{
+            float: left;
+        }
+        /* 떠있는 4개의 div 밑으로 보라색이 자리채우러 들어감 */
+        /* 따라서 밑의 블록이 보라색이 아닌 핑크로 채워짐(보라색이 float블록 밑으러 자리 채우러 이동했기때문) */
+
+        
+    </style>
+</head>
+<body>
+    <div id="div1" class="col col-1" style="background-color: blue;"></div>
+
+    <div id="div2" class="col col-1" style="background-color: green;"></div>
+
+    <div id="div3" class="col col-1" style="background-color: yellow;"></div>
+
+    <div id="div4" class="col col-1" style="background-color: orange;"></div>
+
+    <div id="div5" class="col col-2" style="background-color: purple;"></div>
+
+    <div id="div6" class="col col-3" style="background-color: pink;"></div>
+
+    <div id="div7" class="col col-2" style="background-color: gray;"></div>
+</body>
+</html>
