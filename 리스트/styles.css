@@ -1,0 +1,14 @@
+ul {
+    /* 기본적으로 설정되어있는 패딩 제거 */
+    padding-left: 0;
+    width: 200px;
+}
+
+li {
+    list-style: none; 
+    /* 사이사이마다 간격줌 */
+    margin-bottom: 10px;
+    background-color: #77abff;
+    color: white;
+    padding: 10px 20px;
+}
