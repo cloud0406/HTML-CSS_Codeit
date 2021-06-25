@@ -70,5 +70,26 @@ body {
     border-radius: 5px;
   }
   
+  #menu {
+     list-style: none;
+     float: right;
+  }
+
+  #menu li {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    color: black;
+    
+  }
+
+  #menu li a{
+    text-decoration: none;
+  }
+
+  #menu li a:hover{
+    background-color: #eeeeee;
+  }
   
   
