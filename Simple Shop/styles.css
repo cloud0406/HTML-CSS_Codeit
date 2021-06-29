@@ -86,3 +86,18 @@
   }
   /* footer */
   
+  .clearfix {
+      clear: both;
+  }
+
+  .footer {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 80px;
+  }
+
+  .footer a{
+      margin-left: 10px;
+      margin-right: 10px;
+      text-decoration: none;
+  }
