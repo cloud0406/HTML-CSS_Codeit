@@ -13,7 +13,14 @@
       width: 100%;
       height: 60px;
       background-color: #353535;
-  
+      padding-left: 30px;
+      padding-right: 30px;
+      line-height: 60px;
+  }
+
+  .navbar .logo {
+    font-size: 20px;
+    color: white;
   }
   
   .banner{
@@ -72,6 +79,22 @@
     background-image: url('../images/img2.jpg');
     background-size: cover;
     background-position: center top;
+    text-align: center;
+  }
+
+  .img-div2 a{
+    color: white;
+    font-weight: bold;
+    border: 4px solid white;
+    padding: 9px 40px;
+    text-decoration: none;
+    vertical-align: middle;
+  }
+
+  .img-div2 .helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
   }
   
   .img-div3{
