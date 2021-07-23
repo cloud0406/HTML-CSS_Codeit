@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="nesting_style.css">
+    <title>Document</title>
+</head>
+<!-- 하나의 열을 또 여러 열로 나누어 사용하는 '중첩(nesting)' 사용
+아래는 하나의 열을 우선 2등분 한 후 다시 4등분 하여 총 8칸으로 나눔 -->
+<body>
+    <div class="container">
+      <div class="row">
+          <!-- 하나의 열을 'col-6'으로 2등분 -->
+        <div class="col-6">
+          <div class="row"> <!-- 중첩을 위한 새로운 행을 만듬 -->
+            <div class="col-3 first">1</div>
+            <div class="col-3 second">2</div>
+            <div class="col-3 third">3</div>
+            <div class="col-3 fourth">4</div>
+          </div>
+        </div>
+  
+        <div class="col-6">
+          <div class="row"> <!-- 중첩을 위한 새로운 행 -->
+            <div class="col-3 first">5</div>
+            <div class="col-3 second">6</div>
+            <div class="col-3 third">7</div>
+            <div class="col-3 fourth">8</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
