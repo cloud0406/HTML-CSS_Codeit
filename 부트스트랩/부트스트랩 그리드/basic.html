@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="basic_style.css">
+    <title>Document</title>
+</head>
+ <!-- container -> row -> column으로 구성 -->
+ <!-- 행은 컨테이너 안에 , 열은 행 안에 사용, 오직 열만 행의 직속자식, 사용할 내용은 열안에 작성 -->
+<!-- 한 줄에 기본 12칸의 열 존재 -->
+ <body>
+    <div class="container">
+      <div class="row">
+        <!-- 정확히 3등분 -->
+        <!-- firstm second .. 는 색깔 구분하기위해 추가한 class -->
+        <div class="col-4 first">first</div>
+        <div class="col-4 second">second</div>
+        <div class="col-4 third">third</div>
+        <!-- 열 4칸씩 사용 -->
+      </div>
+  
+      <div class="row">
+        <!-- 정확히 2등분 -->
+        <div class="col-6 first">first</div>
+        <div class="col-6 second">second</div>
+        <!-- 열 6칸씩 사용 -->
+      </div>
+  
+      <div class="row">
+        <!-- 1대 5 비율 -->
+        <div class="col-2 first">first</div>
+        <div class="col-10 second">second</div>
+        <!-- 열 2칸 10칸 사용 -> 1:5 -->
+      </div>
+  
+      <div class="row">
+        <!-- 1대 2대 1 비율 -->
+        <div class="col-3 first">first</div>
+        <div class="col-6 second">second</div>
+        <div class="col-3 third">third</div>
+        <!-- 사용자의 편의에 따라 열 개수 나눌수 있음 -->
+      </div>
+    </div>
+  </body>
+</html>
