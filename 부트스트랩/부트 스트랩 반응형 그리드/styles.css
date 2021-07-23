@@ -1,0 +1,63 @@
+/* 
+Extra Small (< 576px): 모바일
+Small (≥ 576px): 모바일
+Medium (≥ 768px): 타블릿
+Large (≥ 992px): 데스크탑
+Extra Large (≥ 1200px): 와이드 데스크탑 
+*/
+
+
+/****************** container 사용시 ************************/
+.container {
+    width: 100%; /* extra small */
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  /* small */
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+
+      /* 색깔은 원래 설정 안되어있음 (추가한것) */
+      background-color: skyblue;
+    }
+    
+  }
+  
+  /* medium */
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+      background-color: red;
+    }
+  }
+  
+  /* large */
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+      background-color: orange;
+    }
+  }
+  
+  /* extra large */
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+      background-color: yellow;
+    }
+  }
+  /* ************************************************************ */
+
+  /********************** .container-fluid 사용시 ******************/
+  .container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  /* *************************************************************** */
