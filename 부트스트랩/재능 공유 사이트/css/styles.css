@@ -1,4 +1,61 @@
 body {
     font-family: 'Noto Sans KR', sans-serif;
   }
-  
+
+.carousel-item {
+  background-size: cover;
+  height: 400px;
+  background-color: gray;
+  text-align: center;
+}
+
+.carousel-item.item1 {
+  background-image: url('../images/guitar.jpg');
+  background-position: left center;
+}
+
+.carousel-item.item2 {
+  background-image: url('../images/makeup.jpg');
+  background-position: center top;
+}
+
+.carousel-item.item3 {
+  background-image: url('../images/cooking.jpg');
+  background-position: center center;
+}
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.intro {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.intro h2 {
+  font-size: 32px;
+  color: white;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.intro h3 {
+  font-size: 22px;
+  color: white;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 48px;
+}
+
+.intro a {
+  background-color: #5900e7;
+  border-radius: 2px;
+  padding: 10px 30px;
+  color: white;
+  font-weight: 300;
+  text-decoration: none;
+}
