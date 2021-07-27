@@ -59,3 +59,41 @@ body {
   font-weight: 300;
   text-decoration: none;
 }
+
+.container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.course {
+  display: block;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.course .course-img {
+  display: block;
+}
+
+.course .info {
+  padding: 10px;
+  text-decoration: none;
+}
+
+.course .info h4 {
+  font-size: 18px;
+  color: #4a4a4a;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.course .info .lecturer{
+  font-size: 13px;
+  color: #4a4a4a;
+}
+
+.course .info .lecturer img,
+.course .info .lecturer .name{
+  vertical-align: middle;
+}
